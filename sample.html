@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Pizzaria</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="style sample.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="logo.png" alt="Logo" class="logo">
+      <div class="menu-dropdown">
+        <span class="dropdown-icon">&nbsp;</span>
+        <ul class="menu-dropdown-content">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gif-section">Dine In</a></li>
+          <li><a href="#gallery">Order Here</a></li>
+          <li><a href="#contact-section">Contact</a></li>  
+      </ul>
+    </nav>
+  </header>
+  <script>
+    // Toggle menu dropdown
+const menuDropdown = document.querySelector('.menu-dropdown');
+const menuDropdownContent = document.querySelector('.menu-dropdown-content');
+
+menuDropdown.addEventListener('click', function () {
+menuDropdownContent.classList.toggle('active');
+});
+  </script>
+  <section id="home">
+    <div class="hero">
+      <img src="la pizza.png" alt="lapizza" class="lapizza">
+      <p>Finger Linking Gord</p>
+      <a href="#gallery" class="cta-button">Order Now</a>
+
+    </div>
+  </section>
+  
+  <section id="about">
+    <div class="about-content">
+      <h2>Welcome to La Pizzaria,</h2>
+      <p>your go-to destination for mouthwatering pizzas in the heart of Batangas!</p>
+      <p>At La Pizzaria, we believe that pizza is not just a food, but a delicious work of art that brings people together. Whether you're a local resident or a hungry traveler passing through, our pizza parlor promises to satisfy your cravings and leave you craving for more.
+      </p>
+      <a href="#" class="button">Get To Know Us More</a>
+    </div>
+  </section>
+
+  <section class="gif-section">
+    <div class="content">
+      <h1>The Best Pizza In Town!</h1>
+      <p>IN PIZZA, WE CRUST</p>
+      <button class="btn">Dine In</button>
+    </div>
+    <div class="image-container">
+    </div>
+    <img src="The 25 best pizzas in Toronto.gif" alt="Cover GIF" class="gif-image">
+  </section>
+
+        <section id="gallery">
+          <h2 class="section-title">Order Here</h2>
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <a href="addtocart.html">
+                <img src="pizzbg.jpg" alt="Pizza">
+                <div class="image-overlay">
+                  <h3>Pizza</h3>
+                </div>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <a href="pastacart.html">
+                <img src="pastbg.jpg" alt="Pasta">
+                <div class="image-overlay">
+                  <h3>Pasta and More</h3>
+                </div>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <a href="drinkscart.html">
+                <img src="drinbg.jpg" alt="Drinks">
+                <div class="image-overlay">
+                  <h3>Drinks</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>       
+
+        <div id="contact-section">
+          <h2>Contact Us</h2>
+          <p>Please feel free to reach out to us via the following channels:</p>
+          <div class="contact-info">
+            <div class="social-media a">
+              <a href="https://www.facebook.com/elaine.domaycos.1" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="social-media b">
+              <a href="https://www.instagram.com/elainedomaycos/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="contact-details">
+              <p>Email: lapizzaria@gmail.com</p>
+              <p>Phone: +1 123-456-7890</p>
+            </div>
+          </div>
+        </div>
+              
+              <script src="sscript.js"></script>
+              </body>
+              </html>

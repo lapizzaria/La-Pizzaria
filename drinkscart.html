@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinks</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="drinkstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <header class="menu">
+    <nav>
+      <ul>
+        <li><a href="sample.html">Home</a></li>
+        <li><a href="addtocart.html">Pizza</a></li>
+        <li><a href="pastacart.html">Pasta & More</a></li>
+        <li><a href="drinkscart.html">Drinks</a></li>
+        <li><a class="cart" href="checkout.html"><i class="fa fa-shopping-cart"></i><span class="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="addtocart-section">
+    <h1>Your Favorite Pizza Delivered At Your Doorstep!</h1>
+    <h2>Refreshers, Coffee, and More!</h2>
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="lem.jpg" alt="Lemonade">
+        <div class="item-info">
+          <h2 class="item-title">Lemonade</h2>
+          <p class="item-price">P100.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Lemonade', 120.00)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="pom.jpg" alt= "Pomelo Juice">
+        <div class="item-info">
+          <h2 class="item-title">Pomelo Juice</h2>
+          <p class="item-price">P100.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Pomelo Juice', 130.00)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="mang.jpg" alt="Mango Delight">
+        <div class="item-info">
+          <h2 class="item-title">Mango Delight</h2>
+          <p class="item-price">P110.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Mango Delight', 150.00)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="straw.jpg" alt="Strawberry Shortcake">
+        <div class="item-info">
+          <h2 class="item-title">Strawberry Shortcake</h2>
+          <p class="item-price">P120.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Strawberry Shortcake', 130.00)">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="cart-item">
+        <img src="cof.jpg" alt="Iced Americano">
+        <div class="item-info">
+          <h2 class="item-title">Iced Americano</h2>
+          <p class="item-price">P140.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Iced Americano', 120.00)">Add to Cart</button>
+        </div>
+      </div>
+        <!-- Item 4 -->
+        <div class="cart-item">
+            <img src="macha.jpg" alt="Jeju Malcha">
+            <div class="item-info">
+              <h2 class="item-title">Jeju Malcha</h2>
+              <p class="item-price">P150.00</p>
+              <label for="quantity-1">Quantity:</label>
+              <button class="quantity-btn minus">-</button>
+              <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+              <button class="quantity-btn plus">+</button>
+              <button class="add-to-cart-btn" onclick="addToCart('Jeju Malcha', 190.00)">Add to Cart</button>
+            </div>
+          </div>  <!-- Item 4 -->
+      <div class="cart-item">
+        <img src="latte.jpg" alt="Spanish Latte">
+        <div class="item-info">
+          <h2 class="item-title">Spanish Latte</h2>
+          <p class="item-price">P150.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Spanish Latte', 150.00)">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="cart-item">
+        <img src="cara.jpg" alt="Caramel Macchiato">
+        <div class="item-info">
+          <h2 class="item-title">Caramel Macchiato</h2>
+          <p class="item-price">P150.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Caramel Macchiato', 140.00)">Add to Cart</button>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2023 La Pizzaria Corporation. All rights reserved.</p>
+  </footer>
+
+  <script src="pastascript.js"></script>
+</body>
+</html>
+
+

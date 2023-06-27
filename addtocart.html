@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="addtocart style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <header class="menu">
+    <nav>
+      <ul>
+        <li><a href="sample.html">Home</a></li>
+        <li><a href="addtocart.html">Pizza</a></li>
+        <li><a href="pastacart.html">Pasta & More</a></li>
+        <li><a href="drinkscart.html">Drinks</a></li>
+        <li><a class="cart" href="checkout.html"><i class="fa fa-shopping-cart"></i><span class="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="addtocart-section">
+    <h1>Your Favorite Pizza Delivered At Your Doorstep!</h1>
+    <h2>Variety of Pizza Flavors</h2>
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="pepperoni.jpg" alt="Pepperoni Pizza">
+        <div class="item-info">
+          <h2 class="item-title">Pepperoni Pizza</h2>
+          <p class="item-price">P120.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Pepperoni Pizza', 120.00)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="bianca.jpg" alt="Pizza Bianca">
+        <div class="item-info">
+          <h2 class="item-title">Pizza Bianca</h2>
+          <p class="item-price">P130.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Pizza Bianca', 130.00)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="bbq.jpg" alt="Barbeque Pizza">
+        <div class="item-info">
+          <h2 class="item-title">Barbeque Pizza</h2>
+          <p class="item-price">P150.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Barbeque Pizza', 150.00)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="four cheese.jpg" alt="Four Cheese Pizza">
+        <div class="item-info">
+          <h2 class="item-title">Four Cheese Pizza</h2>
+          <p class="item-price">P130.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Four Cheese Pizza', 130.00)">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="cart-item">
+        <img src="hawaiian.jpg" alt="Hawaii You Pizza">
+        <div class="item-info">
+          <h2 class="item-title">Hawaii You Pizza</h2>
+          <p class="item-price">P120.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Hawaii You Pizza', 120.00)">Add to Cart</button>
+        </div>
+      </div>
+        <!-- Item 4 -->
+        <div class="cart-item">
+            <img src="shri.jpg" alt="Shrimp Scampi Pizza">
+            <div class="item-info">
+              <h2 class="item-title">Shrimp Scampi Pizza</h2>
+              <p class="item-price">P190.00</p>
+              <label for="quantity-1">Quantity:</label>
+              <button class="quantity-btn minus">-</button>
+              <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+              <button class="quantity-btn plus">+</button>
+              <button class="add-to-cart-btn" onclick="addToCart('Shrimp Scampi Pizza', 190.00)">Add to Cart</button>
+            </div>
+          </div>  <!-- Item 4 -->
+      <div class="cart-item">
+        <img src="chipes.jpg" alt="Chicken Pesto Pizza">
+        <div class="item-info">
+          <h2 class="item-title">Chicken Pesto Pizza</h2>
+          <p class="item-price">P150.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Chicken Pesto Pizza', 150.00)">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="cart-item">
+        <img src="pota.jpg" alt="Baked Potato Pizza">
+        <div class="item-info">
+          <h2 class="item-title">Baked Potato Pizza</h2>
+          <p class="item-price">P140.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Baked Potato Pizza', 140.00)">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Item 5 -->
+      <div class="cart-item">
+        <img src="mar.jpg" alt="Margherita Pizza">
+        <div class="item-info">
+          <h2 class="item-title">Margherita Pizza</h2>
+          <p class="item-price">P130.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Margherita Pizza', 130.00)">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Item 6 -->
+      <div class="cart-item">
+        <img src="veg.jpg" alt="Veggieta Pizza">
+        <div class="item-info">
+          <h2 class="item-title">Veggieta Pizza</h2>
+          <p class="item-price">P120.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Veggieta Pizza', 120.00)">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Item 7 -->
+      <div class="cart-item">
+        <img src="burri.jpg" alt="Burrito Pizza">
+        <div class="item-info">
+          <h2 class="item-title">Burrito Pizza</h2>
+          <p class="item-price">P130.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Burrito Pizza', 130.00)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="mush.jpg" alt="Garlic Mushroom Pizza">
+        <div class="item-info">
+          <h2 class="item-title">Garlic Mushroom Pizza</h2>
+          <p class="item-price">P150.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Garlic Mushroom Pizza', 150.00)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="spi.jpg" alt="Spinach and Artichoke Dip Pizza">
+        <div class="item-info">
+          <h2 class="item-title">Spinach and Artichoke Dip Pizza</h2>
+          <p class="item-price">P150.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Spinach and Artichoke Dip Pizza', 150.00)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="gar.jpg" alt="Roasted Garlic Chicken Pesto Pizza">
+        <div class="item-info">
+          <h2 class="item-title">Roasted Garlic Chicken Pesto Pizza</h2>
+          <p class="item-price">P150.00</p>
+          <label for="quantity-1">Quantity:</label>
+          <button class="quantity-btn minus">-</button>
+          <input type="number" id="quantity-1" name="quantity-1" value="1" min="1" max="10">
+          <button class="quantity-btn plus">+</button>
+          <button class="add-to-cart-btn" onclick="addToCart('Roasted Garlic Chicken Pesto Pizza', 150.00)">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 La Pizzaria Corporation. All rights reserved.</p>
+  </footer>
+
+  <script src="pastascript.js"></script>
+</body>
+</html>
+
+
